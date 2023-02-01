@@ -1,0 +1,23 @@
+///*********************** http://localhost:5201/api1/user
+{
+  //路由配置  
+  "Routes": [
+    {
+      //下行路径模板 //对程序内的
+      "DownstreamPathTemplate": "/api/{url}", //服务地址-url变量
+      "DownstreamScheme": "http", //https
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost", //主机
+          "Port": 5124 //服务端口
+        }
+      ],
+      "UpstreamPathTemplate": "/api1/{url}", //网关地址--url变量
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], //http请求方式
+      "FileCacheOptions": {
+        "TtlSeconds": 5,
+        "Region": "UserCache"
+      }
+    }
+  ]
+}
