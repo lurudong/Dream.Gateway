@@ -129,8 +129,8 @@ QOS并实现
 
 限制单位时间内请求数，超过就返回指定信息避免错误，降低用户体验保证可用性.
 
-<font color="red">两害相权取基轻，优先于缓存</font>
-<span style="color: green"> Some green text </span>
+<font color=red>两害相权取基轻，优先于缓存</font>
+
 
 ### 服务降价
 
